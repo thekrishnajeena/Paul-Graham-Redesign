@@ -1,0 +1,204 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Jersey+15&display=swap');
+
+body {
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+font-family: 'Jersey 15', serif;    
+    border: 20px solid #eeb12e;
+    background-color: rgb(248, 239, 233);
+    color: #333;
+  }
+   h2, h3,img{
+    padding: 0;
+    margin: 0;
+   }
+
+  
+  header {
+    color: black;
+    padding: .1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav h1{
+    padding: 0 1rem;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color:  black;
+    font-weight: bold;
+  }
+
+  .burger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.burger-menu span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 4px 0;
+}
+
+  .topMain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10rem 0;
+  }
+
+  .topMain .PG{
+    font-size: 4rem;
+  }
+
+  .centerMain{
+    position: relative;
+    display: flex;
+    padding: 0 1rem;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+  }
+
+  .centerMainLeft{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+    
+  }
+
+  .centerMainLeft h2{
+    font-size: 40px;
+  }
+  .centerMainImage{
+    flex: 1;
+  }
+  .centerMainRight{
+    flex: 1;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+  }
+
+  .centerMainRightQuote ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .centerMainRightQuote li{
+    padding: 1rem;
+    position: relative;
+    background-color: white;
+    border-radius: 1rem;
+    margin: 1rem;
+    flex-shrink: 1;
+    transition-duration: .5s;
+  }
+
+  .quoteList li:nth-child(1){
+    transform: translateX(0px);
+  }
+  
+  .quoteList li:nth-child(2) {
+    transform: translateX(20px); 
+  }
+  
+  .quoteList li:nth-child(3) {
+    transform: translateX(40px);
+  }
+
+  .bt-pr-card{
+    transition-duration: .5s;
+  }
+  .centerMainRightQuote li:hover,
+  .bt-pr-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  header nav li{
+    transition-duration: 0.5s;
+    padding: .3rem;
+    border-radius: 5px;
+  }
+  header nav li:hover{
+transform: translateY(-5px);
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  }
+
+  .profileOfInvestment-wrapper{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profileOfInvestment{
+    width: fit-content;
+    position: relative;
+    margin-top: -70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: white;
+  }
+
+  .profileOfInvestment .bt-pr-card{
+    display: flex;
+    flex-direction: row;
+
+    padding: 1rem;
+    margin: 1rem;
+    
+  }
+  .investmentNum{
+  flex-direction: column;
+
+  }
+
+  .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .1rem 1rem;
+  }
+
+    .icon img{
+    width: 40px;
+  }
+  footer {
+    text-align: center;
+    padding: 1rem;
+    color: black;
+  }
+  
